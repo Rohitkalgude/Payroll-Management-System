@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.use("/api/admin", adminRoutes);
 app.use("/api/employee", employeeRoutes);
 
-const port = process.env.PORT;
-app.listen({ port }, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log(`server started on ${port}`);
 });

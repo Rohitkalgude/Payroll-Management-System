@@ -1,0 +1,21 @@
+#root {
+  color: #191919;
+  background-color: #f3f8fb;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* .bg-image {
+  background-image: url(/home/rohit/Rohit/payrollMenagmentSys/frontend/src/assets/LogoWeb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* Remove default number input arrows in Chrome, Safari, Edge, Opera */
+.custom-number-input::-webkit-outer-spin-button,
+.custom-number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,4 @@
+mongo db 
+password : 123456
+username : dhruv03@gmail.com
+connection url : mongodb+srv://dhruvsali03:<password>@payroll.euu9a.mongodb.net/?retryWrites=true&w=majority&appName=payroll

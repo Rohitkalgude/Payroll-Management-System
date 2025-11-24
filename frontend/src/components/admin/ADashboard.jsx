@@ -85,7 +85,7 @@ function Adashboard() {
         };
 
         const result = await axios.get(
-          "http://localhost:3000/api/employee/getAllEmployees",
+          `http://localhost:3000/api/employee/getAllEmployees`,
           config
         );
 

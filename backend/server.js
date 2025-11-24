@@ -12,7 +12,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: process.env.FORNTEND_URL,
     credentials: true,
   })
 );

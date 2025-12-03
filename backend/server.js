@@ -12,7 +12,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.FORNTEND_URL,
+    origin: [
+      process.env.FORNTEND_URL,
+      "https://payroll-management-system-odua.onrender.com",
+    ],
     credentials: true,
   })
 );

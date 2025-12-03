@@ -26,7 +26,9 @@ function Adashboard() {
       };
 
       await axios.delete(
-        "http://localhost:3000/api/employee/deleteEmployeeByEmail",
+        `${
+          import.meta.env.VITE_BACKEND_URL
+        }/api/employee/deleteEmployeeByEmail`,
         {
           data: { email: employee.email }, // Axios requires the request body to be sent in the `data` property for DELETE requests
           ...config,

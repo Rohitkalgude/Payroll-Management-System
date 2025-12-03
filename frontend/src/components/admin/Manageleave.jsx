@@ -135,8 +135,7 @@ function Manageleave() {
     fetchLeaves();
   }, []);
 
-  const profileImg =
-    "https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg";
+  const profileImg = "https://i.postimg.cc/4dpZbV1p/default-avatar.png";
 
   return (
     <div className="bg-divBg rounded-lg shadow-shadowStyle flex justify-center flex-wrap p-5">

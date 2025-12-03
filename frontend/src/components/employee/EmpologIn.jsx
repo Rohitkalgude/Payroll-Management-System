@@ -39,7 +39,7 @@ function EmpologIn() {
       };
 
       const result = await axios.post(
-        "http://localhost:3000/api/employee/login",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/login`,
         body,
         config
       );

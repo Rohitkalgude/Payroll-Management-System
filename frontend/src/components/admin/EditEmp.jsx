@@ -48,7 +48,7 @@ function EditEmp() {
       };
   
       const result = await axios.patch(
-        "http://localhost:3000/api/employee/editEmployee",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/editEmployee`,
         body,
         config
       );

@@ -30,7 +30,7 @@ export default function BasicLineChart() {
         };
 
         const result = await axios.post(
-          "http://localhost:3000/api/employee/calculatePastSixMonthsInHandSalary",
+          `${import.meta.env.VITE_BACKEND_URL}/api/employee/calculatePastSixMonthsInHandSalary`,
           body,
           config
         );

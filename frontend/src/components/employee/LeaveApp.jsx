@@ -58,7 +58,7 @@ function LeaveApp() {
       };
 
       const result = await axios.post(
-        "http://localhost:3000/api/employee/applyleave",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/applyleave`,
         body,
         config
       );

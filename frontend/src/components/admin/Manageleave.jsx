@@ -85,7 +85,7 @@ function Manageleave() {
         adminMsg: leaveToUpdate.adminMsg,
       };
       await axios.patch(
-        "http://localhost:3000/api/employee/updateLeaveRequest",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/updateLeaveRequest`,
         body,
         config
       );
@@ -119,7 +119,7 @@ function Manageleave() {
         adminMsg: leaveToUpdate.adminMsg,
       };
       await axios.patch(
-        "http://localhost:3000/api/employee/updateLeaveRequest",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/updateLeaveRequest`,
         body,
         config
       );

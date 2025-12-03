@@ -75,7 +75,7 @@ function AddEmployee() {
       };
 
       const result = await axios.post(
-        "http://localhost:3000/api/employee/create",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/create`,
         body,
         config
       );

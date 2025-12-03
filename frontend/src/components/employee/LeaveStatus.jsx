@@ -29,7 +29,7 @@ function LeaveStatus() {
         };
 
         const result = await axios.post(
-          "http://localhost:3000/api/employee/getAllLeavesByEmployee",
+          `${import.meta.env.VITE_BACKEND_URL}/api/employee/getAllLeavesByEmployee`,
           body,
           config
         );

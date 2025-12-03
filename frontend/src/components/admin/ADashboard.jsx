@@ -85,7 +85,7 @@ function Adashboard() {
         };
 
         const result = await axios.get(
-          `http://localhost:3000/api/employee/getAllEmployees`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/employee/getAllEmployees`,
           config
         );
 

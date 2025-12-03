@@ -4,13 +4,16 @@ import React, { useState } from "react";
 import { FaRupeeSign } from "react-icons/fa";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 function GenereteSalary() {
   const { selectedEmployee, handleCloseModal } = useEmployeeContext();
   const [showSalaryData, setshowSalaryData] = useState(false);
-  const [salaryData , setSalaryData] = useState(null)
+  const [salaryData, setSalaryData] = useState(null);
 
   const [monthYear, setMonthYear] = useState("");
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const value = e.target.value; // value is in the format "YYYY-MM"
@@ -36,20 +39,20 @@ function GenereteSalary() {
       };
 
       const result = await axios.post(
-        "http://localhost:3000/api/employee/generateSalarySlip",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/generateSalarySlip`,
         body,
         config
       );
-      
+
       toast.success(result.data.message);
-      setSalaryData(result.data.salarySlip)
+      setSalaryData(result.data.salarySlip);
       setshowSalaryData(true);
       navigate("/admin/dashboard");
     } catch (err) {
       toast.error(err.response.data.error);
     }
   };
-  console.log(salaryData)
+  console.log(salaryData);
 
   return (
     <div>

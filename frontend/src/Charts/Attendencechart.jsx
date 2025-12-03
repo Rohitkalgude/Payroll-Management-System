@@ -30,7 +30,7 @@ function Attendencechart() {
         };
 
         const result = await axios.post(
-          "http://localhost:3000/api/employee/countPastSixMonthsAttendance",
+          `${import.meta.env.VITE_BACKEND_URL}/api/employee/countPastSixMonthsAttendance`,
           body,
           config
         );

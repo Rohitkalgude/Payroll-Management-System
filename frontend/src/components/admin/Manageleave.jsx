@@ -36,11 +36,11 @@ function Manageleave() {
 
       // Fetch both pending and all leaves
       const pendingResult = await axios.get(
-        "http://localhost:3000/api/employee/getAllPendingLeaves",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/getAllPendingLeaves`,
         config
       );
       const allResult = await axios.get(
-        "http://localhost:3000/api/employee/getAllLeaves",
+        `${import.meta.env.VITE_BACKEND_URL}/api/employee/getAllLeaves`,
         config
       );
 
